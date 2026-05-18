@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор варки — Rice World</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍚 Rice World</a>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="varieties.html">Сорта</a></li>
+          <li><a href="recipes.html">Рецепты</a></li>
+          <li><a href="calculator.html" class="active">Калькулятор</a></li>
+          <li><a href="diary.html">Дневник</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+      </button>
+      <button id="burger-btn" class="burger-btn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <h1>Калькулятор идеальной варки</h1>
+      <form id="calc-form" class="calc-form">
+        <div class="form-group">
+          <label for="rice-type">Сорт риса:</label>
+          <select id="rice-type" required>
+            <option value="">-- Выберите сорт --</option>
+            <option value="basmati">Басмати</option>
+            <option value="jasmine">Жасмин</option>
+            <option value="round">Круглозёрный (краснодарский)</option>
+            <option value="arborio">Арборио</option>
+            <option value="parboiled">Пропаренный</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="portions">Количество порций:</label>
+          <input type="number" id="portions" min="1" max="10" value="2" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Рассчитать</button>
+      </form>
+
+      <div id="result-block" class="result-block" style="display:none;">
+        <h2>Результат</h2>
+        <p><strong>Объём воды:</strong> <span id="result-water"></span></p>
+        <p><strong>Время варки:</strong> <span id="result-cook"></span></p>
+        <p><strong>Отдых после варки:</strong> <span id="result-rest"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rice World. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/calculator.js" defer></script>
+</body>
+</html>

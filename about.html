@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О проекте — Rice World</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍚 Rice World</a>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="varieties.html">Сорта</a></li>
+          <li><a href="recipes.html">Рецепты</a></li>
+          <li><a href="calculator.html">Калькулятор</a></li>
+          <li><a href="diary.html">Дневник</a></li>
+          <li><a href="about.html" class="active">О проекте</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+      </button>
+      <button id="burger-btn" class="burger-btn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <h1>О проекте</h1>
+      <section class="about-author">
+        <h2></h2>
+        <p><strong></strong></p>
+        <p><strong></strong></p>
+        <p><strong></strong></p>
+        <p>Этот сайт создан в рамках учебного итогового проекта. Он объединяет информацию о рисе, калькулятор, рецепты и дневник питания.</p>
+      </section>
+
+      <section class="contact-form">
+        <h2>Свяжитесь со мной</h2>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="ivan@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="4" placeholder="Напишите, что думаете о сайте..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+          <p id="form-feedback" style="display:none; color: green;"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rice World. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (name && email) {
+        document.getElementById('form-feedback').style.display = 'block';
+        this.reset();
+      }
+    });
+  </script>
+</body>
+</html>

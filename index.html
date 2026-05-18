@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rice World — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍚 Rice World</a>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="varieties.html">Сорта</a></li>
+          <li><a href="recipes.html">Рецепты</a></li>
+          <li><a href="calculator.html">Калькулятор</a></li>
+          <li><a href="diary.html">Дневник</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+      </button>
+      <button id="burger-btn" class="burger-btn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <section class="hero">
+        <h1>Добро пожаловать в мир риса</h1>
+        <p>Узнайте о сортах, готовьте идеально и вдохновляйтесь рецептами со всего света.</p>
+        <a href="varieties.html" class="btn btn-primary">Исследовать сорта</a>
+      </section>
+
+      <section class="popular">
+        <h2>Популярные сорта</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e8a3?w=400&h=300&fit=crop" alt="Басмати" loading="lazy">
+            <h3>Басмати</h3>
+            <p>Ароматный длиннозёрный рис для плова и индийских блюд.</p>
+            <a href="varieties.html#basmati" class="btn btn-small">Подробнее</a>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=400&h=300&fit=crop" alt="Жасмин" loading="lazy">
+            <h3>Жасмин</h3>
+            <p>Нежный и слегка клейкий рис, идеален для тайской кухни.</p>
+            <a href="varieties.html#jasmine" class="btn btn-small">Подробнее</a>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1596560548464-f010549b84b9?w=400&h=300&fit=crop" alt="Арборио" loading="lazy">
+            <h3>Арборио</h3>
+            <p>Круглозёрный рис для итальянского ризотто.</p>
+            <a href="varieties.html#arborio" class="btn btn-small">Подробнее</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Рассчитайте идеальную варку</h2>
+        <p>Укажите сорт и количество порций — получите точное время и объём воды.</p>
+        <a href="calculator.html" class="btn btn-secondary">К калькулятору</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rice World. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+</body>
+</html>

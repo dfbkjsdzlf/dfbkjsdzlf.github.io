@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сорта риса — Rice World</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">🍚 Rice World</a>
+      <nav id="main-nav" class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="varieties.html" class="active">Сорта</a></li>
+          <li><a href="recipes.html">Рецепты</a></li>
+          <li><a href="calculator.html">Калькулятор</a></li>
+          <li><a href="diary.html">Дневник</a></li>
+          <li><a href="about.html">О проекте</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Переключить тему">
+        <span class="icon-light">☀️</span>
+        <span class="icon-dark">🌙</span>
+      </button>
+      <button id="burger-btn" class="burger-btn" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <h1>Сорта риса</h1>
+      <div class="cards-grid">
+        <article class="card" id="basmati">
+          <img src="https://images.unsplash.com/photo-1586201375761-83865001e8a3?w=400&h=300&fit=crop" alt="Басмати" loading="lazy">
+          <h2>Басмати</h2>
+          <p><strong>Происхождение:</strong> Индия, Пакистан</p>
+          <p><strong>Особенности:</strong> Длинные зёрна, при варке становятся ещё длиннее, имеют характерный ореховый аромат. Идеален для плова, бирьяни и как гарнир к пряным блюдам.</p>
+          <p><strong>Время варки:</strong> 10–12 минут + 5 минут отдыха</p>
+        </article>
+        <article class="card" id="jasmine">
+          <img src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?w=400&h=300&fit=crop" alt="Жасмин" loading="lazy">
+          <h2>Жасмин</h2>
+          <p><strong>Происхождение:</strong> Таиланд</p>
+          <p><strong>Особенности:</strong> Белоснежные, чуть склеивающиеся зёрна с лёгким цветочным ароматом. Главный гарнир в тайской и вьетнамской кухне.</p>
+          <p><strong>Время варки:</strong> 9–10 минут + 5 минут отдыха</p>
+        </article>
+        <article class="card" id="arborio">
+          <img src="https://images.unsplash.com/photo-1596560548464-f010549b84b9?w=400&h=300&fit=crop" alt="Арборио" loading="lazy">
+          <h2>Арборио</h2>
+          <p><strong>Происхождение:</strong> Италия</p>
+          <p><strong>Особенности:</strong> Округлые зёрна с высоким содержанием крахмала. При медленном приготовлении в бульоне создают нежную кремовую текстуру ризотто.</p>
+          <p><strong>Время варки:</strong> 18–20 минут, помешивая</p>
+        </article>
+        <article class="card" id="krasnodar">
+          <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=400&h=300&fit=crop" alt="Круглозёрный краснодарский" loading="lazy">
+          <h2>Круглозёрный краснодарский</h2>
+          <p><strong>Происхождение:</strong> Россия, Краснодарский край</p>
+          <p><strong>Особенности:</strong> Круглые зёрна, хорошо развариваются, становятся мягкими и чуть липкими. Идеален для каш, молочных блюд и пудингов.</p>
+          <p><strong>Время варки:</strong> 12–15 минут</p>
+        </article>
+        <article class="card" id="parboiled">
+          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop" alt="Пропаренный рис" loading="lazy">
+          <h2>Пропаренный рис</h2>
+          <p><strong>Особенности:</strong> Зёрна обработаны паром, что сохраняет больше витаминов. При варке остаются рассыпчатыми, не слипаются. Хороший выбор для начинающих.</p>
+          <p><strong>Время варки:</strong> 15–17 минут</p>
+        </article>
+        <article class="card" id="black">
+          <img src="https://images.unsplash.com/photo-1610614819513-58e34989737d?w=400&h=300&fit=crop" alt="Чёрный рис" loading="lazy">
+          <h2>Чёрный рис</h2>
+          <p><strong>Происхождение:</strong> Юго-Восточная Азия</p>
+          <p><strong>Особенности:</strong> Глубокий чёрный цвет, богат антиоксидантами, ореховый вкус. Часто используется в десертах и экзотических гарнирах.</p>
+          <p><strong>Время варки:</strong> 30–35 минут</p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rice World. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+</body>
+</html>
