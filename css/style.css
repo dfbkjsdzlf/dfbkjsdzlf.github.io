@@ -260,4 +260,5 @@ input, select, textarea {
   .hero h1 {
     font-size: 2rem;
   }
+  @media (max-width: 768px)
 }
